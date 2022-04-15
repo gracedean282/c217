@@ -3,9 +3,9 @@
 #Activity 12 by Grace Dean
 ############################
 
-if diff file1act12 file2act12 >/dev/null ; then
-	echo Same
+if search="$( grep -F -f file1 file2 )"
+then
+	echo "the following matches were found: $search"
 else
-	echo different
+	echo "no matches found"
 fi
-
