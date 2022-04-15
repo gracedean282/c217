@@ -1,10 +1,8 @@
 #!/bin/sh
 ###############################
-#Activity 1  by Grace Dean
+#Activity 11  by Grace Dean
 ###############################
 
-read -p "activity11numbers : " filename
-while read -n1 character
-do
-	echo $character
-done < $filename | sort -n
+read -p "Enter filename : " filename
+
+sort $filename -n -r | uniq 
