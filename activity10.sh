@@ -2,13 +2,21 @@
 #######################
 #Activity 10 by Grace Dean
 #######################
+filename=$1
+numLines=$2
 
-touch activity10file
+if [ -f "$filename" ]; then
+    echo "$filename already exists."
+    exit -1
+fi
 
-RANDOM=$$
-for i in `seq 10` 
+
+touch $filename
+
+for (( i=0; i<$numLines; i++ ))
 do
-	echo $RANDOM
-cp -b:> activity10file
+	echo $RANDOM >> $filename
+done
 
-done 
+
+exit 0
