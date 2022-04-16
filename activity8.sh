@@ -4,6 +4,9 @@
 ###########################
 
 read -p "Enter your numbers: " x
-echo "These are your numbers: $[x]!"
 
+if (( $#x < 5 ))
+then echo Not enough numbers
+else echo EnoughNumbers
+fi
 
