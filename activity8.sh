@@ -5,7 +5,7 @@
 
 read -p "Enter your numbers: " x
 
-if (( $#x < 5 ))
+if (( $# < 5 ))
 then echo Not enough numbers
 else echo EnoughNumbers
 fi
