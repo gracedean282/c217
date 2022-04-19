@@ -1,5 +1,0 @@
-dog
-pig
-mouse
-lion
-fish
