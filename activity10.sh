@@ -15,7 +15,8 @@ touch $filename
 
 for (( i=0; i<$numLines; i++ ))
 do
-	echo $RANDOM >> $filename
+echo $RANDOM >> $filename
+
 done
 
 
